@@ -39,7 +39,10 @@ import processing.core.PImage;
 public class AmazingRings extends PApplet {
     static final int WIDTH = 800;
     static final int HEIGHT = 600;
-
+    int radX = 50;
+    int spdX = 200;
+    int spdX2 = 600;
+    int dir = 1;
     PImage waldo;
 
     @Override
@@ -56,20 +59,33 @@ public class AmazingRings extends PApplet {
     @Override
     public void draw() {
  
-    int radX = 200;
-    int spdX = 200;
+   
     
 
-
-    	for(int count2 = 0; count2 < 100; count2++) {
-    		 ellipse (spdX += 5,300, radX, radX);
-    	  	 
+    	background (WIDTH, HEIGHT, 200);
+    	for(int count2 = 0; count2 < 30; count2++) {
+    		 ellipse (spdX,300, radX+10*count2, radX+10*count2);
+    	  	    
     	}
     	for(int count = 0; count < 30; count++) {
-         ellipse (spdX,300, radX-10, radX-=10);
-         background (WIDTH, HEIGHT, 200);
+         ellipse (spdX2,300, radX+10*count, radX+10*count);
+         
     	}
+    	
+  
+    	
+    if (spdX==0) {
+    	dir=-1;
+    	spdX+=1*dir;
+    	spdX2-=1*dir;
+    	}else {
+    		spdX+=1*dir;
+        	spdX2-=1*dir;
+    	}
+    	
     }
+    
+    
 
     static public void main(String[] args) {
         PApplet.main(AmazingRings.class.getName());
