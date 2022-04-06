@@ -61,31 +61,29 @@ public class AmazingRings extends PApplet {
  
    
     
-
+    	
     	background (WIDTH, HEIGHT, 200);
     	for(int count2 = 0; count2 < 30; count2++) {
     		 ellipse (spdX,300, radX+10*count2, radX+10*count2);
-    	  	    
-    	}
+    		
+    		 }
+    	
     	for(int count = 0; count < 30; count++) {
          ellipse (spdX2,300, radX+10*count, radX+10*count);
-         
-    	}
+   
+         }
+    	
     	
   
-    	
-    if (spdX==0) {
-    	dir=-1;
     	spdX+=1*dir;
-    	spdX2-=1*dir;
-    	}else {
-    		spdX+=1*dir;
-        	spdX2-=1*dir;
-    	}
+        spdX2-=1*dir;
+
+   if (spdX>=WIDTH || spdX <=0) {
+    	dir*=-1;
     	
+    
+    	}
     }
-    
-    
 
     static public void main(String[] args) {
         PApplet.main(AmazingRings.class.getName());
