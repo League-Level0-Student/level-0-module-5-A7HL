@@ -5,7 +5,7 @@ public class ForLooP {
 		 * 
 		 * 
 		 * */
-		for(int a =0; a <=100; a++) {
+		/*for(int a =0; a <=100; a++) {
 			System.out.println(a);
 		}
 		for(int b = 100;b>=0;b--) {
@@ -46,8 +46,48 @@ public class ForLooP {
 		
 		
 		
-		for(int A=0; A<10; A++) {
+		for(int A=0; A<3; A++) {
+			for(int B=0; B<3;B++) {
+				System.out.print(A);
+				System.out.println(B);
+			}
 			
 		}
+		int F = 1;
+		for(int C=1; C<4;C++) {
+			for(int D=0;D<3;D++) {
+			System.out.print(F);
+			F++;	
+			}
+			System.out.println();
+			
+		}*/
+		int G = 1;
+		for(int H =0;H<10;H++) {
+			for(int i =0; i<10;i++) {
+				System.out.print(G+" ");
+				G++;
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		}
 	}
