@@ -61,7 +61,8 @@ public class ForLooP {
 			}
 			System.out.println();
 			
-		}*/
+		}
+		//below works but not exactly
 		int G = 1;
 		for(int H =0;H<10;H++) {
 			for(int i =0; i<10;i++) {
@@ -69,8 +70,31 @@ public class ForLooP {
 				G++;
 			}
 			System.out.println();
+		
+		int L =1;
+		int[][] array = new int[10][10];
+		for(int J=0;J<10;J++) {
+			for(int k=0;k<10;k++) {
+				array[J][k]=L;
+					
+				System.out.print(array[J][k]+"\t");
+				L++;
+			}
+			System.out.println();
 		}
 		
+		String hi = "";
+		for(int m =0;m<6;m++) {
+			hi +="*";
+			System.out.println(hi);
+		
+		}
+	*/
+		for(int n = 0; n<=100; n++) {
+			int o =100;
+			o-=n;
+			System.out.println(o);
+		}
 		
 		
 		
