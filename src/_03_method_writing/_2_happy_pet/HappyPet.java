@@ -1,4 +1,6 @@
 package _03_method_writing._2_happy_pet;
+import java.awt.Component;
+
 import javax.swing.JOptionPane;
 
 public class HappyPet {
@@ -44,8 +46,8 @@ public class HappyPet {
 	// 5. Create methods to handle each of your user selections.
 	//    Each method should create a pop-up with the pet's response (eg. cat might purr when pet), 
 	//    and INCREMENT the pet's happiness Level.
-	public static void method_cuddle(String message) {
-		JOptionPane.showMessageDialog("pet");
+	public static void method_cuddle(String pet) {
+		String test = JOptionPane.showMessageDialog("Your pet");
 	}
 	public static void method_food() {
 		
