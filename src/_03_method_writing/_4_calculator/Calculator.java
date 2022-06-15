@@ -6,13 +6,13 @@ public class Calculator {
 
 	//GOAL: MAKE A CALCULATOR
 	public static void main(String[] args) {
-		int result =0;
+		double result =0;
 		String input1 = JOptionPane.showInputDialog("Enter a number");
-		int task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
+		double task = JOptionPane.showOptionDialog(null, "What do you choose?", "Calculator", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "divide", "multiply", "subtract", "add" }, null);
 		String input2 = JOptionPane.showInputDialog("Enter another number");
-		int number1 = Integer.parseInt(input1);
-		int number2 = Integer.parseInt(input2);
+		double number1 = Double.parseDouble(input1);
+		double number2 = Double.parseDouble(input2);
 		// 3) Call the correct method depending on what option the user chooses
 	if(task==0) {
 		result = divide(number1,number2);
@@ -36,19 +36,19 @@ public class Calculator {
 	//		They should each take 2 numbers as parameters
 	//		and return the answer.
 	
-	public static int divide (int number1,int number2) {
-		int totald = number1/=number2;
+	public static double divide (double number1,double number2) {
+		double totald = number1/=number2;
 		return (totald);
-	}public static int multiply(int number1,int number2) {
-		int totalm = number1*=number2;
+	}public static double multiply(double number1,double number2) {
+		double totalm = number1*=number2;
 		return (totalm);
 	}
-	public static int subtract(int number1,int number2) {
-		int totalp = number1-=number2;
+	public static double subtract(double number1,double number2) {
+		double totalp = number1-=number2;
 		return(totalp);
 	}
-	public static int add(int number1,int number2) {
-		int totals = number1+=number2;
+	public static double add(double number1,double number2) {
+		double totals = number1+=number2;
 		return(totals);
 		
 	}
